@@ -221,6 +221,7 @@ main {
     width: 80%;
     border-radius: 30px;
     padding: 40px 60px;
+    gap: 20px;
 }
 
 .container__left, .container__right {
@@ -228,7 +229,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
     gap: 40px;
 }
 
@@ -246,7 +246,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 15px;
+    gap: 10px;
 }
 
 .left__a a {
@@ -254,7 +254,7 @@ main {
     border-radius: 20px;
     border: 1px solid var(--secondary);
     padding: 10px 20px;
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -297,7 +297,7 @@ main {
     display: flex;
     align-items: center;
     width: 100%;
-    gap: 40px;
+    gap: 20px;
 }
 
 .img__bottom {
@@ -310,6 +310,17 @@ main {
     padding: 10px;
     width: 30%;
     height: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.text__bottom h3 {
+    font-size: 50px;
+    text-align: end;
+    border-top: 1px solid #121212;
+    padding-top: 20px;
+    border-bottom: 1px solid #121212;
+    padding-bottom: 10px;
 }
 
 .right__bottom img {

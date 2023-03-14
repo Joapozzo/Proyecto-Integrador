@@ -213,6 +213,14 @@
 
     .producto__destacado {
         background-image: url(./assets/product\ hot\ sale\ -\ mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .divisor__contenedor h3 {

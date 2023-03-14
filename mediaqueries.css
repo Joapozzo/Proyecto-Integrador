@@ -223,6 +223,10 @@
         width: 100%;
     }
 
+    .destacado__texto {
+        gap: 400px;
+    }
+
     .divisor__contenedor h3 {
         font-size: 15px;
     }

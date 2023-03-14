@@ -12,6 +12,18 @@
     src: url(./assets/font/texgyreadventor-bold.otf);
 }
 
+@font-face {
+    font-family: Akira;
+    font-weight: 400;
+    src: url(./assets/font/Akira\ Expanded\ Demo.otf);
+}
+
+@font-face {
+    font-family: 'urban';
+    font-weight: 400;
+    src: url(./assets/font/Syncopate-Bold.ttf);
+}
+
 :root {
     --principal: #9155bf;
     --secondary: #4bd8db;
@@ -110,14 +122,14 @@ main {
     flex-direction: column;
     align-items: center;
     padding-top: 90px;
-    gap: 100px;
+    gap: 40px;
 }
 
 .hero__container h1 {
-    padding: 0 50px;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Akira';
 }
 
 .hero__container h1 span {
@@ -127,10 +139,11 @@ main {
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
+    font-family: 'Akira';
 }
 
 .hero__container a {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     background: rgb(145,85,176);
     background: linear-gradient(90deg, 
@@ -158,13 +171,15 @@ main {
     color: transparent;
     -webkit-background-clip: text;
     font-size: 40px;
+    font-family: 'urban';
 }
 
 .products__catalogo {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
+    padding: 0 40px;
 }
 
 .product__container {
@@ -219,9 +234,10 @@ main {
     width: 100%;
 }
 
-.especial__h2 {
-    font-size: 40px;
+.especial__h2 h2 {
+    font-size: 50px;
     text-align: center;
+    font-family: 'Akira';
 }
 
 .especial__container {
@@ -330,6 +346,7 @@ main {
     padding-top: 20px;
     border-bottom: 1px solid #121212;
     padding-bottom: 10px;
+    font-family: 'urban';
 }
 
 .right__bottom img {
@@ -351,7 +368,6 @@ main {
     height: 100px;
 }
 
-
 .divisor__contenedor {
     font-size: 22px;
     display: flex;
@@ -369,6 +385,8 @@ main {
 .divisor__contenedor span {
     color: var(--principal);
 }
+
+/* PRODUCTO DESTACADO */
 
 .producto__destacado {
     background-image: url(./assets/product\ hot\ sale.png);
@@ -429,6 +447,7 @@ main {
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
+    font-family: 'urban';
 }
 
 .beneficios__father {

@@ -30,7 +30,7 @@
     /* HERO */
     
     .hero__container h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .hero__container a {
@@ -39,8 +39,8 @@
 
     /* PRODUCT ESPECIAL */
 
-    .especial__h2 {
-        font-size: 30px;
+    .especial__h2 h2 {
+        font-size: 40px;
     }
 
     .left__a a {
@@ -52,7 +52,7 @@
     }
 
     .text__bottom h3 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
 
@@ -130,11 +130,11 @@
     /* HERO */
 
     .hero__container h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .hero__container a {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     /* PRODUCT ESPECIAL */
@@ -144,7 +144,7 @@
     }
 
     .especial__h2 h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .especial__container {
@@ -180,10 +180,6 @@
         font-size: 40px;
     }
 
-    .text__bottom h3 {
-        font-size: 40px;
-    }
-
     .right__bottom {
         display: flex;
         align-items: center;
@@ -204,7 +200,7 @@
     /* CORREGIR */
 
     .text__bottom h3 {
-        font-size: 50px;
+        font-size: 40px;
         padding: 20px;
         text-align: end;
     }
@@ -215,11 +211,19 @@
 
     /* DESTACADO */
 
+    .producto__destacado {
+        background-image: url(./assets/product\ hot\ sale\ -\ mobile.png);
+    }
+
     .divisor__contenedor h3 {
         font-size: 15px;
     }
 
     /* PRODUCTS */
+
+    #products h2 {
+        text-align: center;
+    }
 
     .products__catalogo {
         display: flex;

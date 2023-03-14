@@ -405,7 +405,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 500px;
+    gap: 400px;
 }
 
 .destacado__texto h3 {

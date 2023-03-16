@@ -151,6 +151,7 @@ main {
     rgba(145,85,176,1) 32%, rgba(75,216,208,1) 100%);
     padding: 10px 17px;
     border-radius: 13px;
+    text-align: center;
 }
 
 
@@ -222,6 +223,7 @@ main {
     background: var(--principal);
     border-radius: 10px;
     padding: 7px 15px;
+    text-align: center;
 }
 
 /* Product special */
@@ -282,6 +284,7 @@ main {
     padding: 10px 20px;
     font-size: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .right__top {
@@ -429,6 +432,7 @@ main {
     padding: 10px 20px;
     font-size: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* BENEFICIOS */

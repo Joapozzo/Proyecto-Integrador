@@ -129,6 +129,18 @@
 
     /* HERO */
 
+    #hero {
+        background-image: url(./assets/Fondo\ hero-navbar\ mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .hero__container h1 {
         font-size: 30px;
     }
@@ -158,7 +170,7 @@
 
     .container__left, .container__right {
         height: 45%;
-        width: 70%;
+        width: 75%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -223,9 +235,9 @@
         width: 100%;
     }
 
-    .destacado__texto {
-        gap: 400px;
-    }
+    /* .destacado__texto {
+
+    } */
 
     .divisor__contenedor h3 {
         font-size: 15px;

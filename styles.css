@@ -540,6 +540,7 @@ main {
     border-radius: 30px;
     color: var(--principal);
     font-size: 20px;
+    transition: 0.2s ease-in;
 }
 
 .footer__bottom {

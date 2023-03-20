@@ -186,3 +186,10 @@ html {
 .beneficios__cards:hover {
     transform: scale(1.1);
 }
+
+/* FOOTER */
+
+.footer__redes i:hover {
+    transform: scale(1.2);
+    color: var(--secondary);
+}

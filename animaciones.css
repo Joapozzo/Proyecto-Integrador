@@ -1,0 +1,188 @@
+/* ANIMACIONES */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
+/* EFECTO MANU HAMBURGESA */
+
+.overlay {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+
+    /*Efecto de Desemfpque*/
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+.navbar__input:checked ~ .overlay {
+    display: block;
+    animation: fade 0.3s ease-in;
+
+}
+
+.navbar__input:checked + .navbar__list {
+    animation: fade 0.3s ease-in, slide-right 0.4s ease-in;
+}
+
+/* ELEMENTOS A NAVBAR */
+
+.navbarlist__a a {
+    position: relative;
+    padding: 0 10px;
+}
+
+.navbarlist__a a::after {
+    content: "";
+    position: absolute;
+    background-color: #ffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbarlist__a a:hover {
+    color: #ffff;
+    transition: 0.3s;
+}
+
+.navbarlist__a a:hover::after {
+    width: 100%;
+}
+
+/* EFECTO BOTON NAVBAR */
+
+.navbarlist__login a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg, 
+        var(--principal), blue, deeppink, blue,
+        var(--principal), blue, deeppink, blue
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite
+}
+
+.navbarlist__login a:hover {
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* EFECTOS HERO */
+
+.hero__container a:hover {
+    box-shadow: 0 0 10px 0 var(--secondary) inset, 0 0 10px 4px var(--secondary);
+}
+
+/* ANIMACIONES */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* APLICACION */
+
+.hero__container h1 {
+    animation: fade 1s ease-in, slide-down 1.3s ease-in-out;
+}
+
+.hero__container a {
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;   
+}
+
+/* PRODUCTOS */
+
+.product__container:hover {
+    transform: scale(1.1);
+}
+
+.products__catalogo a:hover {
+    background-color: var(--principal);
+    transform: scale(1.1);
+}
+
+/* PRODUCTO DESTACADO */
+
+.destacado__texto a:hover {
+    background-color: var(--secondary);
+    transform: scale(1.1);
+    color: #121212;
+    font-weight: 700;
+}
+
+/* BENEFICIOS */
+
+.beneficios__cards:hover {
+    transform: scale(1.1);
+}

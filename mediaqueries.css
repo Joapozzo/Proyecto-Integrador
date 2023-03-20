@@ -12,6 +12,13 @@
         font-size: 25px;
     }
 
+    .navbarlist__a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
     .navbar__input:checked + .navbar__list {
         display: block;
         position: fixed;
@@ -21,7 +28,7 @@
         width: 30%;
         right: 0;
         display: flex; 
-        gap: 110px;
+        gap: 70px;
         flex-direction: column;
         align-items: center;
         padding-top: 20px;

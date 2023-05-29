@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Akira';
+    font-weight: 400;
+    src: url(../../assets/font/Akira\ Expanded\ Demo.otf);
+}
+
+:root {
+    --principal: #9155bf;
+    --secondary: #4bd8db;
+    --gray: #121212;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: var(--gray);
+}
+
+main {
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.loguin__container {
+    z-index: 99;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.loguin__container__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+    background-color: var(--principal);
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.img-back {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color negro con opacidad baja (0.5 en este ejemplo) */
+    z-index: 1; /* Asegura que la capa esté encima de la imagen */
+}
+
+.img-loguin {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-loguin::before {
+    content: "";
+    background-color: #121212;
+    opacity: 2;
+}
+
+.left__items {
+    padding: 0 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.title__left {
+    font-size: 40px;
+    text-shadow: 3px 2px 9px black;
+    font-weight: 800;
+}
+
+.text__left {
+    text-shadow: 2px 2px 5px black;
+    font-weight: 400;
+    width: 95%;
+}
+
+.textRedes__left {
+    text-shadow: 2px 2px 5px black;
+    font-weight: 400;
+}
+
+.redes__container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.facebook__container {
+    background-color: #3b5998;
+    padding: 5px 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.media__icon {
+    color: white;
+}
+
+.google__container {
+    background-color: #fbbc05;
+    padding: 5px 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.google__container:hover,
+.facebook__container:hover {
+    transition: all .2s ease-in-out;
+    scale: 1.1;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.loguin__container__right {
+    padding: 0 10px;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 30px;
+}
+
+.loguin {
+    font-size: 25px;
+    border-bottom: 1px solid var(--principal);
+    padding-bottom: 10px;
+}
+
+.inputs__loguin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+
+.input__login {
+    padding: 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--principal);
+    outline: none;
+}
+
+.loguin__btn {
+    background-color: var(--principal);
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    
+}
+
+.loguin__btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--principal);
+    color: var(--principal);
+    transition: all .2s ease-in-out;
+}
+
+

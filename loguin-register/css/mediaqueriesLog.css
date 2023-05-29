@@ -1,0 +1,25 @@
+@media (max-width: 992px) {
+    .loguin__container {
+        width: 80%;
+    }
+
+    .text__left {
+        font-size: 14px;
+    }
+
+    .register__text {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width:576px ) {
+
+    .loguin__container__left {
+        text-align: center;
+    }
+
+    .loguin__container {
+        width: 95%;
+    }
+}

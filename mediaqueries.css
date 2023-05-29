@@ -1,6 +1,11 @@
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
 
     /* header */
+
+    .main__h2 {
+        text-align: center;
+        padding: 0 20px;
+    }
 
     .navbar__list {
         display: none;
@@ -105,7 +110,7 @@
 
 /* MOBILE */
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
 
     /* NAVBAR */
 
